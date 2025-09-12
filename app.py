@@ -433,7 +433,7 @@ RESOURCES = {
         },
         {
             "title": "The Matrix and Plato's Cave",
-            "url": "https://www.youtube.com/watch?v=n7jnorm3gNs",
+            "url": "https://www.youtube.com/watch?v=LlzgtG_09Z0",
             "description": "Comparing the famous movie to Plato's allegory",
             "duration": "8 minutes"
         }
