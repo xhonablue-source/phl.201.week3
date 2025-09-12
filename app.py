@@ -95,7 +95,7 @@ SLIDES = [
         "id": "plato_biography",
         "title": "Meet Plato",
         "content": """
-        # 👨‍🏫 Plato (428/427 - 348/347 BCE)
+        # Plato (428/427 - 348/347 BCE)
         
         ## The Man Behind the Ideas
         
