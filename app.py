@@ -720,7 +720,7 @@ RESOURCES = {
 
 def display_quiz():
     st.title("📚 PHL 201: Ancient Philosophy & Human Nature")
-    st.markdown("## Complete Assessment - 85 Questions")
+    st.markdown("## Midterm Assessment - 50 Questions")
     
     total_questions = len(QUIZ_QUESTIONS)
     answered_count = len(st.session_state.answers)
