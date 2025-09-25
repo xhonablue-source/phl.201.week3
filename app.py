@@ -1,8 +1,4 @@
-"correct": 1,
-        "explanation": "All theories of human nature ultimately address what makes humans special or distinctive and what gives human existence meaning, purpose, and moral worth.",
-        "category": "Human Nature"
-    },
-    {
+{
         "id": 53,
         "question": "What does Desmond Morris's evolutionary argument suggest about human altruism?",
         "options": [
@@ -42,7 +38,7 @@
         "category": "Human Nature"
     },
 
-    # Aristotle's Critique (Questions 56-65)
+    # Aristotle's Critique (Questions 56-70)
     {
         "id": 56,
         "question": "What is Aristotle's 'Third Man' argument against Plato's Forms?",
@@ -173,10 +169,75 @@
         "explanation": "Aristotle believed reason should guide emotions toward virtue, but unlike Plato, he didn't see emotions as necessarily opposed to reason - both are natural parts of human flourishing.",
         "category": "Aristotle's Critique"
     },
-
-    # Contemporary Applications & Synthesis (Questions 66-80)
     {
         "id": 66,
+        "question": "How does Aristotle's concept of the 'rational part' of the soul differ from Plato's tripartite theory?",
+        "options": [
+            "Aristotle denies humans have any rational capacity",
+            "Aristotle sees rationality as one capacity among others, not a separate part battling other parts",
+            "Aristotle thinks there are four parts instead of three",
+            "There is no difference between their views"
+        ],
+        "correct": 1,
+        "explanation": "Unlike Plato's conflicting parts of the soul, Aristotle sees rationality as one natural capacity that should work harmoniously with other aspects of human nature.",
+        "category": "Aristotle's Critique"
+    },
+    {
+        "id": 67,
+        "question": "What does Aristotle mean by 'substantial form'?",
+        "options": [
+            "A form that weighs a lot",
+            "The essential nature that makes a thing what it is",
+            "A form that lasts a long time",
+            "A form that is separate from matter"
+        ],
+        "correct": 1,
+        "explanation": "Substantial form is the essential nature that makes a thing what it is - for humans, it's the rational soul that organizes matter into a living, thinking being.",
+        "category": "Aristotle's Critique"
+    },
+    {
+        "id": 68,
+        "question": "How does Aristotle respond to Plato's claim that the physical world is less real?",
+        "options": [
+            "He agrees completely with Plato",
+            "He argues that individual substances in the physical world are the primary realities",
+            "He says nothing is real at all",
+            "He claims only mathematical objects are real"
+        ],
+        "correct": 1,
+        "explanation": "Aristotle argues that individual substances (like this particular human or horse) are the primary realities, reversing Plato's hierarchy that made universals more real than particulars.",
+        "category": "Aristotle's Critique"
+    },
+    {
+        "id": 69,
+        "question": "What is Aristotle's doctrine of the 'active intellect'?",
+        "options": [
+            "The mind that creates all physical objects",
+            "The part of the rational soul that makes actual knowledge from potential knowledge",
+            "A separate divine mind that thinks for us",
+            "The emotional part of the soul"
+        ],
+        "correct": 1,
+        "explanation": "The active intellect is the aspect of the rational soul that actualizes potential knowledge, making it possible for us to understand universal concepts from particular experiences.",
+        "category": "Aristotle's Critique"
+    },
+    {
+        "id": 70,
+        "question": "How does Aristotle's teleological view differ from modern mechanistic explanations?",
+        "options": [
+            "Aristotle explains things by their purposes, modern science by efficient causes",
+            "There is no difference between ancient and modern explanations",
+            "Aristotle uses only mechanical explanations",
+            "Modern science uses only teleological explanations"
+        ],
+        "correct": 0,
+        "explanation": "Aristotle explains natural phenomena by their inherent purposes or ends (final causes), while modern science typically explains them through efficient causes and mechanical processes.",
+        "category": "Aristotle's Critique"
+    },
+
+    # Contemporary Applications & Gettier Problem (Questions 71-85)
+    {
+        "id": 71,
         "question": "How might Plato's Cave apply to social media?",
         "options": [
             "Social media helps us see reality more clearly",
@@ -189,7 +250,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 67,
+        "id": 72,
         "question": "What is the 'hard problem of consciousness' in modern philosophy of mind?",
         "options": [
             "Consciousness is too hard for ordinary people to understand",
@@ -202,7 +263,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 68,
+        "id": 73,
         "question": "What would Plato likely think about virtual reality technology?",
         "options": [
             "VR is the ultimate reality humans should strive for",
@@ -215,7 +276,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 69,
+        "id": 74,
         "question": "How does artificial intelligence challenge traditional views of human uniqueness?",
         "options": [
             "AI proves humans have no special qualities",
@@ -228,7 +289,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 70,
+        "id": 75,
         "question": "What is 'mathematical Platonism' in contemporary philosophy?",
         "options": [
             "The view that mathematics is too difficult for most people",
@@ -241,7 +302,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 71,
+        "id": 76,
         "question": "How might deepfake technology relate to Plato's concerns about appearance vs. reality?",
         "options": [
             "Deepfakes make reality clearer than ever",
@@ -254,7 +315,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 72,
+        "id": 77,
         "question": "If psychological egoism is true, how might this affect criminal justice policy?",
         "options": [
             "It would support rehabilitation over punishment, since people act from self-interest that can be redirected",
@@ -267,7 +328,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 73,
+        "id": 78,
         "question": "What would be the strongest evidence against Plato's theory of recollection?",
         "options": [
             "People sometimes forget things they learned",
@@ -280,7 +341,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 74,
+        "id": 79,
         "question": "How might a materialist explain moral intuitions without appealing to a Form of Justice?",
         "options": [
             "Moral intuitions are illusions with no real basis",
@@ -293,7 +354,7 @@
         "category": "Contemporary Applications"
     },
     {
-        "id": 75,
+        "id": 80,
         "question": "If consciousness could be uploaded to a computer, what would this mean for theories of personal identity?",
         "options": [
             "It would prove the soul is immaterial",
@@ -303,71 +364,6 @@
         ],
         "correct": 1,
         "explanation": "Successful consciousness uploading would suggest that personal identity consists in information patterns or functional organization rather than specific material substances like souls or brains.",
-        "category": "Contemporary Applications"
-    },
-    {
-        "id": 76,
-        "question": "How might Plato's political philosophy relate to modern debates about expertise vs. democracy?",
-        "options": [
-            "Plato would support direct democracy where everyone votes on everything",
-            "Plato would favor rule by experts (technocracy) over popular opinion",
-            "Plato would think political systems don't matter",
-            "Plato would support random selection of leaders"
-        ],
-        "correct": 1,
-        "explanation": "Plato argued that philosopher-kings who know the Form of Justice should rule, suggesting he'd favor technocracy where experts make decisions based on knowledge rather than popular opinion.",
-        "category": "Contemporary Applications"
-    },
-    {
-        "id": 77,
-        "question": "What is the relationship between Plato's epistemology (theory of knowledge) and his metaphysics (theory of reality)?",
-        "options": [
-            "They are completely unrelated",
-            "Knowledge of eternal Forms is possible because the soul is immortal and shares their eternal nature",
-            "Metaphysics is less important than epistemology",
-            "They contradict each other"
-        ],
-        "correct": 1,
-        "explanation": "Plato's theories are integrated - we can have knowledge of eternal, unchanging Forms because our souls are themselves eternal and immaterial, capable of grasping what is like them.",
-        "category": "Contemporary Applications"
-    },
-    {
-        "id": 78,
-        "question": "If we discovered that all human behavior could be perfectly predicted by brain scans, what would this mean for free will?",
-        "options": [
-            "It would prove free will exists",
-            "It would challenge the reality of free will and moral responsibility",
-            "It would have no implications for free will",
-            "It would only affect criminal behavior"
-        ],
-        "correct": 1,
-        "explanation": "Perfect predictability from brain states would suggest our choices are determined by prior physical causes, challenging traditional notions of free will and moral responsibility.",
-        "category": "Contemporary Applications"
-    },
-    {
-        "id": 79,
-        "question": "What would Aristotle likely think about modern cognitive science research on reasoning?",
-        "options": [
-            "It would completely contradict his philosophy",
-            "It would support his view that rational thinking is a natural capacity that can be developed",
-            "It would prove that reason doesn't exist",
-            "It would have no relevance to his philosophy"
-        ],
-        "correct": 1,
-        "explanation": "Research showing that reasoning is a natural human capacity that improves with practice and education would likely support Aristotle's view of rationality as a developed natural function.",
-        "category": "Contemporary Applications"
-    },
-    {
-        "id": 80,
-        "question": "How might the discovery of alien intelligence affect traditional Western views of human nature?",
-        "options": [
-            "It would have no effect on theories of human nature",
-            "It would challenge the uniqueness of human rationality and might expand concepts of personhood",
-            "It would prove that humans have souls",
-            "It would disprove all philosophy"
-        ],
-        "correct": 1,
-        "explanation": "Rational alien life would challenge human uniqueness and force us to reconsider what makes beings valuable - consciousness, rationality, or specifically human souls.",
         "category": "Contemporary Applications"
     },
 
@@ -439,7 +435,7 @@
     }
 ]
 
-# Resources with direct links to online readings
+# Resources with comprehensive study materials
 RESOURCES = {
     "primary_sources": [
         {
@@ -456,9 +452,9 @@ RESOURCES = {
         },
         {
             "title": "Aristotle's De Anima (On the Soul)",
-            "url": "http://classics.mit.edu/Aristotle/soul.html",
+            "url": "http://classics.MIT.edu/Aristotle/soul.html",
             "description": "Aristotle's complete work on the nature of the soul",
-            "relevance": "Essential for questions 56-65"
+            "relevance": "Essential for questions 56-70"
         },
         {
             "title": "Augustine's Confessions - Book XI",
@@ -484,7 +480,7 @@ RESOURCES = {
             "title": "Stanford Encyclopedia: Ancient Theories of Soul",
             "url": "https://plato.stanford.edu/entries/ancient-soul/",
             "description": "Detailed comparison of Platonic and Aristotelian soul theories",
-            "relevance": "Essential for questions 48, 56-65"
+            "relevance": "Essential for questions 48, 56-70"
         },
         {
             "title": "Stanford Encyclopedia: The Analysis of Knowledge",
@@ -496,25 +492,25 @@ RESOURCES = {
             "title": "Internet Encyclopedia: Plato's Ethics and Political Philosophy",
             "url": "https://iep.utm.edu/plato-ethics/",
             "description": "Accessible overview of Plato's moral and political philosophy",
-            "relevance": "Useful for questions 8, 33-34, 76"
+            "relevance": "Useful for questions 8, 33-34"
         },
         {
             "title": "Stanford Encyclopedia: Personal Identity",
             "url": "https://plato.stanford.edu/entries/identity-personal/",
             "description": "Modern philosophical debates about what makes you 'you'",
-            "relevance": "Important for questions 75, 78"
+            "relevance": "Important for questions 75, 80"
         },
         {
             "title": "Internet Encyclopedia: Philosophy of Mind",
             "url": "https://iep.utm.edu/mind/",
             "description": "Overview of mind-body problem and consciousness",
-            "relevance": "Critical for questions 67, 55"
+            "relevance": "Critical for questions 72, 55"
         },
         {
             "title": "Stanford Encyclopedia: Psychological Egoism",
             "url": "https://plato.stanford.edu/entries/egoism/",
             "description": "Detailed analysis of egoism arguments and objections",
-            "relevance": "Essential for questions 36-37, 41-42, 72"
+            "relevance": "Essential for questions 36-37, 41-42, 77"
         }
     ],
     "modern_applications": [
@@ -522,43 +518,27 @@ RESOURCES = {
             "title": "Philosophy of Artificial Intelligence - Stanford",
             "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
             "description": "How AI relates to consciousness, minds, and human uniqueness",
-            "relevance": "Important for questions 69, 79"
+            "relevance": "Important for questions 74, 79"
         },
         {
             "title": "The Hard Problem of Consciousness - Chalmers",
             "url": "https://consc.net/papers/facing.html",
             "description": "David Chalmers' original paper on the hard problem",
-            "relevance": "Essential for question 67"
+            "relevance": "Essential for question 72"
         },
         {
             "title": "Evolutionary Psychology - Stanford",
             "url": "https://plato.stanford.edu/entries/evolutionary-psychology/",
             "description": "How evolution shapes human behavior and altruism",
-            "relevance": "Critical for questions 42, 50, 74"
-        }
-    ],
-    "study_guides": [
-        {
-            "title": "How to Read Philosophy - Jim Pryor (NYU)",
-            "url": "https://www.jimpryor.net/teaching/guidelines/reading.html",
-            "description": "Essential guide for reading philosophical texts effectively",
-            "relevance": "Fundamental skill for all questions"
-        },
-        {
-            "title": "Writing Philosophy Papers - Harvard",
-            "url": "https://writingcenter.fas.harvard.edu/pages/writing-philosophy",
-            "description": "Guide to philosophical argumentation and analysis",
-            "relevance": "Helps with understanding question logic"
+            "relevance": "Critical for questions 42, 50, 79"
         }
     ]
 }
 
 def display_quiz():
-    """Display the complete 85-question quiz"""
     st.title("📚 PHL 201: Ancient Philosophy & Human Nature")
     st.markdown("## Complete Assessment - 85 Questions")
     
-    # Progress tracking
     total_questions = len(QUIZ_QUESTIONS)
     answered_count = len(st.session_state.answers)
     
@@ -569,12 +549,11 @@ def display_quiz():
         current_q = st.session_state.current_question
         question = QUIZ_QUESTIONS[current_q]
         
-        # Question display
         st.markdown(f"### Question {current_q + 1} of {total_questions}")
         st.markdown(f"**Category:** {question['category']}")
         st.markdown(f"**{question['question']}**")
         
-        # Show previous feedback if answered before
+        # Show previous feedback if answered
         if question['id'] in st.session_state.answers:
             prev_answer = st.session_state.answers[question['id']]
             is_correct = prev_answer['selected'] == prev_answer['correct']
@@ -628,7 +607,7 @@ def display_quiz():
                 st.rerun()
         
         with col2:
-            if st.button("📋 Jump to Question"):
+            if st.button("📋 Jump"):
                 if answer is not None:
                     st.session_state.answers[question['id']] = {
                         'selected': question['options'].index(answer),
@@ -636,7 +615,7 @@ def display_quiz():
                         'category': question['category']
                     }
                 
-                jump_to = st.number_input("Go to question:", 1, total_questions, current_q + 1) - 1
+                jump_to = st.number_input("Go to question:", 1, total_questions, current_q + 1, key="jump_input") - 1
                 st.session_state.current_question = jump_to
                 st.rerun()
         
@@ -655,7 +634,7 @@ def display_quiz():
                 st.rerun()
         
         with col4:
-            if answered_count >= total_questions and st.button("🏁 Finish Quiz"):
+            if answered_count >= total_questions and st.button("🏁 Finish"):
                 if answer is not None:
                     st.session_state.answers[question['id']] = {
                         'selected': question['options'].index(answer),
@@ -669,7 +648,6 @@ def display_quiz():
         display_results()
 
 def display_results():
-    """Display final quiz results"""
     answers = st.session_state.answers
     total_correct = sum(1 for ans in answers.values() if ans['selected'] == ans['correct'])
     total_questions = len(answers)
@@ -698,412 +676,11 @@ def display_results():
     
     st.markdown("## 📊 Performance by Category")
     for cat, stats in categories.items():
-        cat_percentage = (stats['correct'] / stats['total']) * 100
-        st.markdown(f"**{cat}:** {stats['correct']}/{stats['total']} ({cat_percentage:.1f}%)")
-        st.progress(cat_percentage / 100)
-    
-    # Download results
-    if st.button("📄 Download Results"):
-        results_data = {
-            'timestamp': datetime.now().isoformat(),
-            'overall_score': f"{total_correct}/{total_questions} ({percentage:.1f}%)",
-            'category_breakdown': {cat: f"{stats['correct']}/{stats['total']} ({(stats['correct']/stats['total'])*100:.1f}%)" 
-                                 for cat, stats in categories.items()},
-            'detailed_answers': [
-                {
-                    'question_number': i+1,
-                    'question': q['question'],
-                    'category': q['category'],
-                    'selected_answer': q['options'][answers[q['id']]['selected']] if q['id'] in answers else 'Not answered',
-                    'correct_answer': q['options'][q['correct']],
-                    'is_correct': answers[q['id']]['selected'] == q['correct'] if q['id'] in answers else False,
-                    'explanation': q['explanation']
-                }
-                for i, q in enumerate(QUIZ_QUESTIONS)
-            ]
-        }
-        
-        json_str = json.dumps(results_data, indent=2)
-        st.download_button(
-            "Download Complete Results",
-            json_str,
-            file_name=f"phl201_quiz_results_{datetime.now().strftime('%Y%m%d_%H%M')}.json",
-            mime="application/json"
-        )
-    
-    # Reset option
-    if st.button("🔄 Retake Quiz"):
-        st.session_state.current_question = 0
-        st.session_state.answers = {}
-        st.session_state.quiz_completed = False
-        st.rerun()
-
-def display_resources():
-    """Display comprehensive resources"""
-    st.title("📖 Study Resources")
-    st.markdown("## Essential Readings to Answer Quiz Questions")
-    
-    # Primary Sources
-    st.markdown("### 📜 Primary Sources (Original Texts)")
-    for resource in RESOURCES["primary_sources"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Secondary Sources
-    st.markdown("### 🔍 Secondary Sources (Scholarly Analysis)")
-    for resource in RESOURCES["secondary_sources"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Modern Applications
-    st.markdown("### 🌐 Modern Applications")
-    for resource in RESOURCES["modern_applications"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Study Guides
-    st.markdown("### 📚 How to Study Philosophy")
-    for resource in RESOURCES["study_guides"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-
-def main():
-    """Main application"""
-    st.set_page_config(page_title="PHL 201 Quiz", layout="wide")
-    
-    # Sidebar navigation
-    st.sidebar.title("📚 PHL 201 Menu")
-    
-    mode = st.sidebar.radio("Select:", ["📝 Take Quiz", "📖 Study Resources"])
-    
-    if mode == "📝 Take Quiz":
-        display_quiz()
-
-# Resources with direct links to online readings
-RESOURCES = {
-    "primary_sources": [
-        {
-            "title": "Plato's Republic - Book VII (The Cave Allegory)",
-            "url": "http://classics.mit.edu/Plato/republic.8.vii.html",
-            "description": "MIT's complete translation of the original Cave Allegory passage",
-            "relevance": "Essential for questions 21-35"
-        },
-        {
-            "title": "Plato's Phaedo - Theory of Forms and Soul",
-            "url": "http://classics.mit.edu/Plato/phaedo.html",
-            "description": "Complete dialogue on the immortality of the soul and theory of Forms",
-            "relevance": "Critical for questions 1-20, 48"
-        },
-        {
-            "title": "Aristotle's De Anima (On the Soul)",
-            "url": "http://classics.mit.edu/Aristotle/soul.html",
-            "description": "Aristotle's complete work on the nature of the soul",
-            "relevance": "Essential for questions 56-65"
-        },
-        {
-            "title": "Augustine's Confessions - Book XI",
-            "url": "https://www.gutenberg.org/files/3296/3296-h/3296-h.htm",
-            "description": "Augustine on time, memory, and the nature of the soul",
-            "relevance": "Important for questions 39-40, 51"
-        }
-    ],
-    "secondary_sources": [
-        {
-            "title": "Stanford Encyclopedia: Plato's Theory of Forms",
-            "url": "https://plato.stanford.edu/entries/plato-metaphysics/",
-            "description": "Comprehensive scholarly overview of Forms theory and major criticisms",
-            "relevance": "Covers questions 1-20"
-        },
-        {
-            "title": "Stanford Encyclopedia: Ancient Theories of Soul",
-            "url": "https://plato.stanford.edu/entries/ancient-soul/",
-            "description": "Detailed comparison of Platonic and Aristotelian soul theories",
-            "relevance": "Essential for questions 48, 56-65"
-        },
-        {
-            "title": "Internet Encyclopedia: Plato's Ethics and Political Philosophy",
-            "url": "https://iep.utm.edu/plato-ethics/",
-            "description": "Accessible overview of Plato's moral and political philosophy",
-            "relevance": "Useful for questions 8, 33-34, 76"
-        },
-        {
-            "title": "Stanford Encyclopedia: Personal Identity",
-            "url": "https://plato.stanford.edu/entries/identity-personal/",
-            "description": "Modern philosophical debates about what makes you 'you'",
-            "relevance": "Important for questions 75, 78"
-        },
-        {
-            "title": "Internet Encyclopedia: Philosophy of Mind",
-            "url": "https://iep.utm.edu/mind/",
-            "description": "Overview of mind-body problem and consciousness",
-            "relevance": "Critical for questions 67, 55"
-        },
-        {
-            "title": "Stanford Encyclopedia: Psychological Egoism",
-            "url": "https://plato.stanford.edu/entries/egoism/",
-            "description": "Detailed analysis of egoism arguments and objections",
-            "relevance": "Essential for questions 36-37, 41-42, 72"
-        }
-    ],
-    "modern_applications": [
-        {
-            "title": "Philosophy of Artificial Intelligence - Stanford",
-            "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
-            "description": "How AI relates to consciousness, minds, and human uniqueness",
-            "relevance": "Important for questions 69, 79"
-        },
-        {
-            "title": "The Hard Problem of Consciousness - Chalmers",
-            "url": "https://consc.net/papers/facing.html",
-            "description": "David Chalmers' original paper on the hard problem",
-            "relevance": "Essential for question 67"
-        },
-        {
-            "title": "Evolutionary Psychology - Stanford",
-            "url": "https://plato.stanford.edu/entries/evolutionary-psychology/",
-            "description": "How evolution shapes human behavior and altruism",
-            "relevance": "Critical for questions 42, 50, 74"
-        }
-    ],
-    "study_guides": [
-        {
-            "title": "How to Read Philosophy - Jim Pryor (NYU)",
-            "url": "https://www.jimpryor.net/teaching/guidelines/reading.html",
-            "description": "Essential guide for reading philosophical texts effectively",
-            "relevance": "Fundamental skill for all questions"
-        },
-        {
-            "title": "Writing Philosophy Papers - Harvard",
-            "url": "https://writingcenter.fas.harvard.edu/pages/writing-philosophy",
-            "description": "Guide to philosophical argumentation and analysis",
-            "relevance": "Helps with understanding question logic"
-        }
-    ]
-}
-
-def display_quiz():
-    """Display the complete 80-question quiz"""
-    st.title("📚 PHL 201: Ancient Philosophy & Human Nature")
-    st.markdown("## Complete Assessment - 80 Questions")
-    
-    # Progress tracking
-    total_questions = len(QUIZ_QUESTIONS)
-    answered_count = len(st.session_state.answers)
-    
-    st.progress(answered_count / total_questions)
-    st.caption(f"Progress: {answered_count}/{total_questions} questions answered")
-    
-    if not st.session_state.quiz_completed:
-        current_q = st.session_state.current_question
-        question = QUIZ_QUESTIONS[current_q]
-        
-        # Question display
-        st.markdown(f"### Question {current_q + 1} of {total_questions}")
-        st.markdown(f"**Category:** {question['category']}")
-        st.markdown(f"**{question['question']}**")
-        
-        # Show previous feedback if answered before
-        if question['id'] in st.session_state.answers:
-            prev_answer = st.session_state.answers[question['id']]
-            is_correct = prev_answer['selected'] == prev_answer['correct']
-            
-            if is_correct:
-                st.success("✅ Correct!")
-            else:
-                st.error("❌ Incorrect")
-                st.info(f"**Correct answer:** {question['options'][question['correct']]}")
-            
-            st.info(f"**💡 Explanation:** {question['explanation']}")
-            st.markdown("---")
-        
-        # Answer selection
-        default_index = None
-        if question['id'] in st.session_state.answers:
-            default_index = st.session_state.answers[question['id']]['selected']
-        
-        answer = st.radio(
-            "Select your answer:",
-            options=question['options'],
-            key=f"q_{question['id']}",
-            index=default_index
-        )
-        
-        # Immediate feedback
-        if answer is not None:
-            selected_index = question['options'].index(answer)
-            is_correct = selected_index == question['correct']
-            
-            if is_correct:
-                st.success("✅ Correct!")
-                st.balloons()
-            else:
-                st.error("❌ Incorrect")
-                st.info(f"**Correct answer:** {question['options'][question['correct']]}")
-            
-            st.info(f"**💡 Explanation:** {question['explanation']}")
-        
-        # Navigation
-        col1, col2, col3, col4 = st.columns(4)
-        
-        with col1:
-            if current_q > 0 and st.button("⬅️ Previous"):
-                if answer is not None:
-                    st.session_state.answers[question['id']] = {
-                        'selected': question['options'].index(answer),
-                        'correct': question['correct'],
-                        'category': question['category']
-                    }
-                st.session_state.current_question = current_q - 1
-                st.rerun()
-        
-        with col2:
-            if st.button("📋 Jump to Question"):
-                if answer is not None:
-                    st.session_state.answers[question['id']] = {
-                        'selected': question['options'].index(answer),
-                        'correct': question['correct'],
-                        'category': question['category']
-                    }
-                
-                jump_to = st.number_input("Go to question:", 1, total_questions, current_q + 1) - 1
-                st.session_state.current_question = jump_to
-                st.rerun()
-        
-        with col3:
-            if answer is not None and st.button("Next ➡️"):
-                st.session_state.answers[question['id']] = {
-                    'selected': question['options'].index(answer),
-                    'correct': question['correct'],
-                    'category': question['category']
-                }
-                
-                if current_q < total_questions - 1:
-                    st.session_state.current_question = current_q + 1
-                else:
-                    st.session_state.quiz_completed = True
-                st.rerun()
-        
-        with col4:
-            if answered_count >= total_questions and st.button("🏁 Finish Quiz"):
-                if answer is not None:
-                    st.session_state.answers[question['id']] = {
-                        'selected': question['options'].index(answer),
-                        'correct': question['correct'],
-                        'category': question['category']
-                    }
-                st.session_state.quiz_completed = True
-                st.rerun()
-    
-    else:
-        display_results()
-
-def display_results():
-    """Display final quiz results"""
-    answers = st.session_state.answers
-    total_correct = sum(1 for ans in answers.values() if ans['selected'] == ans['correct'])
-    total_questions = len(answers)
-    percentage = (total_correct / total_questions) * 100
-    
-    st.markdown("# 🎉 Quiz Complete!")
-    
-    if percentage >= 90:
-        st.balloons()
-        st.success(f"🌟 Outstanding! {total_correct}/{total_questions} ({percentage:.1f}%)")
-    elif percentage >= 80:
-        st.success(f"🎯 Excellent! {total_correct}/{total_questions} ({percentage:.1f}%)")
-    elif percentage >= 70:
-        st.success(f"👍 Good work! {total_correct}/{total_questions} ({percentage:.1f}%)")
-    else:
-        st.warning(f"📚 Keep studying! {total_correct}/{total_questions} ({percentage:.1f}%)")
-    
-    # Category breakdown
-    categories = {}
-    for ans in answers.values():
-        cat = ans['category']
-        if cat not in categories:
-            categories[cat] = {'correct': 0, 'total': 0}
-        categories[cat]['total'] += 1
-        if ans['selected'] == ans['correct']:
-            categories[cat]['correct'] += 1
-    
-    st.markdown("## 📊 Performance by Category")
-    for cat, stats in categories.items():
-        cat_percentage = (stats['correct'] / stats['total']) * 100
-        st.markdown(f"**{cat}:** {stats['correct']}/{stats['total']} ({cat_percentage:.1f}%)")
-        st.progress(cat_percentage / 100)
-    
-    # Reset option
-    if st.button("🔄 Retake Quiz"):
-        st.session_state.current_question = 0
-        st.session_state.answers = {}
-        st.session_state.quiz_completed = False
-        st.rerun()
-
-def display_resources():
-    """Display comprehensive resources"""
-    st.title("📖 Study Resources")
-    st.markdown("## Essential Readings to Answer Quiz Questions")
-    
-    # Primary Sources
-    st.markdown("### 📜 Primary Sources (Original Texts)")
-    for resource in RESOURCES["primary_sources"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Secondary Sources
-    st.markdown("### 🔍 Secondary Sources (Scholarly Analysis)")
-    for resource in RESOURCES["secondary_sources"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Modern Applications
-    st.markdown("### 🌐 Modern Applications")
-    for resource in RESOURCES["modern_applications"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-    
-    # Study Guides
-    st.markdown("### 📚 How to Study Philosophy")
-    for resource in RESOURCES["study_guides"]:
-        st.markdown(f"**[{resource['title']}]({resource['url']})**")
-        st.markdown(f"*{resource['description']}*")
-        st.markdown(f"🎯 **Relevance:** {resource['relevance']}")
-        st.markdown("---")
-
-def main():
-    """Main application"""
-    st.set_page_config(page_title="PHL 201 Quiz", layout="wide")
-    
-    # Sidebar navigation
-    st.sidebar.title("📚 PHL 201 Menu")
-    
-    mode = st.sidebar.radio("Select:", ["📝 Take Quiz", "📖 Study Resources"])
-    
-    if mode == "📝 Take Quiz":
-        display_quiz()import streamlit as st
+        cat_percentage = (stats['import streamlit as st
 import json
 from datetime import datetime
 
-# Configure page
-st.set_page_config(
-    page_title="PHL 201 - Philosophy Quiz",
-    page_icon="📚",
-    layout="wide"
-)
+st.set_page_config(page_title="PHL 201 Quiz", layout="wide")
 
 # Initialize session state
 if 'current_question' not in st.session_state:
@@ -1113,7 +690,7 @@ if 'answers' not in st.session_state:
 if 'quiz_completed' not in st.session_state:
     st.session_state.quiz_completed = False
 
-# Complete 80-question quiz
+# Complete 85-question quiz
 QUIZ_QUESTIONS = [
     # Plato's Theory of Forms (Questions 1-20)
     {
@@ -1793,4 +1370,6 @@ QUIZ_QUESTIONS = [
             "When did humans first appear on Earth?"
         ],
         "correct": 1,
-        "explanation": "All theories of human nature ultimately address what makes humans special or distinctive and what gives human
+        "explanation": "All theories of human nature ultimately address what makes humans special or distinctive and what gives human existence meaning, purpose, and moral worth.",
+        "category": "Human Nature"
+    },
