@@ -1,4 +1,241 @@
-"""
+# Topic quizzes from original program
+TOPIC_QUIZZES = {
+    "plato_basics": {
+        "title": "Plato's Theory of Forms",
+        "questions": [
+            {
+                "question": "According to Plato, the world we perceive through our senses is:",
+                "options": [
+                    "The most real and reliable source of knowledge",
+                    "An imperfect copy of a more perfect reality",
+                    "An illusion that doesn't exist at all",
+                    "The only world that exists"
+                ],
+                "correct": 1,
+                "explanation": "Plato believed our sensory world consists of imperfect copies or 'shadows' of perfect Forms. The sensory world is real but less real than the world of Forms."
+            },
+            {
+                "question": "What is the main point of Plato's Theory of Forms?",
+                "options": [
+                    "Perfect mathematical and moral concepts exist in a realm beyond our physical world",
+                    "All knowledge comes from sensory experience and observation",
+                    "There is no objective truth, only individual opinions",
+                    "The physical world is all that exists"
+                ],
+                "correct": 0,
+                "explanation": "Plato argued that perfect Forms (like perfect Justice, Beauty, Truth) exist in an eternal realm and serve as the standards for all imperfect copies in our world."
+            },
+            {
+                "question": "Why does the escaped prisoner return to the cave?",
+                "options": [
+                    "He realizes the outside world was just another illusion",
+                    "He wants to rule over the other prisoners",
+                    "He feels a duty to help others reach enlightenment",
+                    "He is forced to return against his will"
+                ],
+                "correct": 2,
+                "explanation": "Plato believed philosophers have a moral obligation to return and help others achieve understanding, even if they face ridicule or resistance."
+            }
+        ]
+    },
+    "cave_allegory": {
+        "title": "Understanding the Cave Allegory",
+        "questions": [
+            {
+                "question": "What does the journey from cave to sunlight represent?",
+                "options": [
+                    "Growing up and becoming an adult",
+                    "The process of philosophical education and enlightenment",
+                    "Escaping from political oppression",
+                    "Learning to use your physical senses better"
+                ],
+                "correct": 1,
+                "explanation": "The journey represents education (paideia) - the process of philosophical learning that moves us from ignorance to knowledge, from opinion to understanding."
+            },
+            {
+                "question": "According to Plato, why do people resist philosophical truth?",
+                "options": [
+                    "Because they are naturally evil or stupid",
+                    "Because truth is painful and they prefer comfortable illusions",
+                    "Because philosophers explain things poorly",
+                    "Because there is no real truth to discover"
+                ],
+                "correct": 1,
+                "explanation": "Plato suggests that people resist truth because it's challenging and disruptive to their existing beliefs - like how bright light hurts eyes accustomed to darkness."
+            }
+        ]
+    }
+}
+
+def display_quiz(quiz_id: str) -> None:
+    """Display topic-specific quiz"""
+    if quiz_id not in TOPIC_QUIZZES:
+        st.error("Quiz not found!")
+        return
+        
+    quiz = TOPIC_QUIZZES[quiz_id]
+    st.markdown(f"## 📝 {quiz['title']}")
+    
+    # Track attempts
+    if quiz_id not in st.session_state.quiz_attempts:
+        st.session_state.quiz_attempts[quiz_id] = 0
+    
+    with st.form(f"quiz_{quiz_id}"):
+        answers = {}
+        for i, q in enumerate(quiz["questions"]):
+            st.markdown(f"**Question {i+1}:** {q['question']}")
+            answer = st.radio(
+                "Choose your answer:",
+                options=q["options"],
+                key=f"q_{quiz_id}_{i}",
+                index=None
+            )
+            if answer:
+                answers[i] = q["options"].index(answer)
+        
+        submitted = st.form_submit_button("Submit Quiz")
+        
+        if submitted and len(answers) == len(quiz["questions"]):
+            st.session_state.quiz_attempts[quiz_id] += 1
+            
+            # Grade quiz
+            correct_count = 0
+            total_questions = len(quiz["questions"])
+            
+            st.markdown("---")
+            st.markdown("### 📊 Results:")
+            
+            for i, q in enumerate(quiz["questions"]):
+                if i in answers:
+                    is_correct = answers[i] == q["correct"]
+                    if is_correct:
+                        correct_count += 1
+                        st.success(f"✅ Question {i+1}: Correct!")
+                    else:
+                        st.error(f"❌ Question {i+1}: Incorrect")
+                        st.info(f"**Correct answer:** {q['options'][q['correct']]}")
+                    
+                    # Show explanation
+                    st.markdown(f"**Explanation:** {q['explanation']}")
+                    st.markdown("---")
+            
+            # Overall score
+            score_pct = (correct_count / total_questions) * 100
+            
+            if score_pct >= 80:
+                st.balloons()
+                st.success(f"Excellent work! Score: {correct_count}/{total_questions} ({score_pct:.0f}%)")
+            elif score_pct >= 60:
+                st.success(f"Good job! Score: {correct_count}/{total_questions} ({score_pct:.0f}%)")
+            else:
+                st.warning(f"Keep studying! Score: {correct_count}/{total_questions} ({score_pct:.0f}%)")
+
+def display_resources() -> None:
+    """Display resources for Week 3"""
+    st.markdown("# 📚 Resources: Ancient Philosophy & Human Nature")
+    
+    # Videos section
+    st.markdown("## 🎥 Recommended Videos")
+    
+    videos = [
+        {
+            "title": "Plato's Allegory of the Cave - TED-Ed",
+            "url": "https://www.youtube.com/watch?v=1RWOpQXTltA",
+            "description": "Beautiful animated explanation of the Cave Allegory",
+            "duration": "7 minutes"
+        },
+        {
+            "title": "Plato's Theory of Forms - Crash Course Philosophy",
+            "url": "https://www.youtube.com/watch?v=MgotDFs6cdE", 
+            "description": "Clear explanation of Forms with modern examples",
+            "duration": "10 minutes"
+        },
+        {
+            "title": "The Matrix and Plato's Cave",
+            "url": "https://www.youtube.com/watch?v=LlzgtG_09Z0",
+            "description": "Comparing the famous movie to Plato's allegory",
+            "duration": "8 minutes"
+        }
+    ]
+    
+    col1, col2 = st.columns(2)
+    
+    for i, video in enumerate(videos):
+        with col1 if i % 2 == 0 else col2:
+            st.markdown(f"### {video['title']}")
+            st.markdown(f"{video['description']}")
+            st.markdown(f"**Duration:** {video['duration']}")
+            st.markdown(f"[Watch Now]({video['url']})")
+            st.markdown("---")
+    
+    # Readings section
+    st.markdown("## 📖 Essential Readings")
+    
+    readings = [
+        {
+            "title": "Plato's Republic - Book VII (Cave Allegory)",
+            "url": "http://classics.mit.edu/Plato/republic.8.vii.html",
+            "description": "Original text of the Cave Allegory - challenging but rewarding"
+        },
+        {
+            "title": "Stanford Encyclopedia: Plato's Theory of Forms",
+            "url": "https://plato.stanford.edu/entries/plato-metaphysics/",
+            "description": "Scholarly overview of Forms theory and major criticisms"
+        },
+        {
+            "title": "Internet Encyclopedia: Human Nature",
+            "url": "https://iep.utm.edu/human-nature/",
+            "description": "Comprehensive overview of philosophical theories of human nature"
+        }
+    ]
+    
+    for reading in readings:
+        st.markdown(f"- **[{reading['title']}]({reading['url']})** - {reading['description']}")
+    
+    # Study tips
+    st.markdown("## 💡 Study Tips")
+    
+    with st.expander("How to Study Philosophy Effectively"):
+        st.markdown("""
+        ### Before Reading:
+        - Preview the main questions the text addresses
+        - Consider what you already believe about the topic
+        
+        ### While Reading:
+        - Take notes on key arguments and evidence
+        - Ask yourself: What is the philosopher trying to prove?
+        - Identify premises and conclusions
+        
+        ### After Reading:
+        - Summarize the main argument in your own words
+        - Consider objections: What might someone disagree with?
+        - Connect ideas to your own experience and other readings
+        
+        ### Discussion Preparation:
+        - Prepare thoughtful questions
+        - Consider multiple perspectives on each issue
+        - Practice explaining concepts to others
+        """)
+
+def start_timer(minutes: int) -> None:
+    """Start activity timer"""
+    st.session_state.timer_active = True
+    st.session_state.timer_end = time.time() + (minutes * 60)
+
+def display_assignment2():
+    """Display Assignment 2: Revised Cave Reflection"""
+    st.markdown("# 📝 Assignment 2: Revised Cave Reflection")
+    st.markdown("## Building on Your Previous Work")
+    
+    # Instructions
+    with st.expander("📋 Assignment Instructions", expanded=True):
+        st.markdown("""
+        ### Your Mission:
+        Revise your Assignment 1 Cave reflection incorporating new understanding from today's lesson.
+        
+        ### Requirements:
+        - **Length:** 300-400 words
+        - **Due:**"""
 PHL 201 Enhanced Philosophy Program - Ancient Philosophy & Human Nature
 Interactive Philosophy Lesson - Xavier Honablue, M.Ed.
 
@@ -1699,7 +1936,7 @@ def enhanced_sidebar_navigation():
     # Mode selection with enhanced options
     mode = st.sidebar.radio(
         "Choose Mode:",
-        ["📊 Presentation", "📝 Assignment 2", "🧠 Comprehensive Quiz", "🎯 Topic Quizzes", "📚 Resources", "💭 Discussion Forums"]
+        ["📊 Presentation", "🧠 Comprehensive Quiz", "🎯 Topic Quizzes", "📚 Resources", "💭 Discussion Forums"]
     )
     
     if mode == "📊 Presentation":
@@ -1765,107 +2002,101 @@ def enhanced_sidebar_navigation():
     
     return mode.split()[1].lower()
 
-def main():
-    """Enhanced main application function"""
-    # Custom CSS for better styling
-    st.markdown("""
-    <style>
-    .main > div {
-        padding-top: 2rem;
-    }
-    .stButton > button {
-        width: 100%;
-        border-radius: 10px;
-        border: none;
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        color: white;
-        transition: all 0.3s ease;
-    }
-    .stButton > button:hover {
-        background: linear-gradient(45deg, #764ba2, #667eea);
-        transform: translateY(-2px);
-    }
-    .stProgress .st-bo {
-        background-color: #667eea;
-    }
-    .quiz-category {
-        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-        padding: 15px;
-        border-radius: 10px;
-        margin: 10px 0;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+def display_slide(slide_data: dict) -> None:
+    """Display a slide with enhanced formatting"""
+    col1, col2 = st.columns([4, 1])
     
-    # Determine current mode from enhanced sidebar
-    current_mode = enhanced_sidebar_navigation()
-    
-    if current_mode == "presentation":
-        # Enhanced presentation mode
-        current_slide = SLIDES[st.session_state.current_slide]
-        display_slide(current_slide)
+    with col1:
+        st.markdown(slide_data["content"])
         
-        # Progress indicator
-        progress = (st.session_state.current_slide + 1) / len(SLIDES)
-        st.progress(progress)
-        st.caption(f"Slide {st.session_state.current_slide + 1} of {len(SLIDES)}")
-    
-    elif current_mode == "assignment":
-        display_assignment2()
-    
-    elif current_mode == "comprehensive":
-        display_comprehensive_quiz()
-    
-    elif current_mode == "topic":
-        st.markdown("# 🎯 Topic-Specific Quizzes")
-        
-        topic_quizzes = {
-            "Plato's Theory of Forms": "plato_basics",
-            "Cave Allegory Understanding": "cave_allegory" 
-        }
-        
-        selected_topic = st.selectbox("Choose a topic:", list(topic_quizzes.keys()))
-        if selected_topic:
-            display_quiz(topic_quizzes[selected_topic])
-    
-    elif current_mode == "resources":
-        display_resources()
-    
-    elif current_mode == "discussion":
-        st.markdown("# 💭 Philosophy Discussion Forum")
-        st.markdown("## Engage with Key Questions")
-        
-        discussion_topics = [
-            "Is Plato's Cave relevant to social media and digital life?",
-            "Can artificial intelligence ever be truly conscious?", 
-            "Are humans naturally selfish or capable of genuine altruism?",
-            "Should experts rule over popular opinion in democracy?",
-            "What would happen to personal identity if consciousness could be uploaded?"
-        ]
-        
-        selected_topic = st.selectbox("Choose a discussion topic:", discussion_topics)
-        
-        st.markdown(f"### Discussing: {selected_topic}")
-        
-        # Simulated discussion interface
-        user_response = st.text_area(
-            "Share your thoughts (300+ words):",
-            placeholder="Consider multiple perspectives, use philosophical concepts from the readings, and engage critically with the ideas...",
-            height=200
-        )
-        
-        if user_response and len(user_response.split()) >= 50:
-            st.success("💬 Response recorded! In a real course, this would be shared with classmates.")
+        # Add interactive elements for specific slides
+        if slide_data.get("timer_minutes"):
+            st.markdown("---")
+            st.info(f"⏰ Activity Time: {slide_data['timer_minutes']} minutes")
             
-            # Simulated peer responses
-            with st.expander("👥 See what others are saying..."):
-                st.markdown("""
-                **Sarah M.:** I think Plato's Cave is incredibly relevant to social media echo chambers. We're all seeing curated "shadows" of reality...
-                
-                **Marcus L.:** While I agree there are parallels, I think Plato might actually see social media as potentially democratizing knowledge rather than just creating more illusions...
-                
-                **Dr. Chen:** Remember to consider both the benefits and dangers of any technology. What would the escaped prisoner do with social media?
-                """)
+            if st.button(f"Start {slide_data['timer_minutes']} minute timer"):
+                start_timer(slide_data["timer_minutes"])
+                st.rerun()
+    
+    with col2:
+        # Timer display
+        if st.session_state.timer_active and st.session_state.timer_end:
+            remaining = st.session_state.timer_end - time.time()
+            if remaining > 0:
+                mins, secs = divmod(int(remaining), 60)
+                st.markdown(f"""
+                <div style="background: linear-gradient(45deg, #ff6b6b, #ee5a24); 
+                           color: white; padding: 15px; border-radius: 10px; text-align: center;">
+                    <h3>⏰ Timer</h3>
+                    <h2>{mins:02d}:{secs:02d}</h2>
+                </div>
+                """, unsafe_allow_html=True)
+                time.sleep(1)
+                st.rerun()
+            else:
+                st.balloons()
+                st.success("⏰ Time's up!")
+                st.session_state.timer_active = False
 
-if __name__ == "__main__":
-    main()
+def start_timer(minutes: int) -> None:
+    """Start activity timer"""
+    st.session_state.timer_active = True
+    st.session_state.timer_end = time.time() + (minutes * 60)
+
+def display_assignment2():
+    """Display Assignment 2: Revised Cave Reflection"""
+    st.markdown("# 📝 Assignment 2: Revised Cave Reflection")
+    st.markdown("## Building on Your Previous Work")
+    
+    # Instructions
+    with st.expander("📋 Assignment Instructions", expanded=True):
+        st.markdown("""
+        ### Your Mission:
+        Revise your Assignment 1 Cave reflection incorporating new understanding from today's lesson.
+        
+        ### Requirements:
+        - **Length:** 300-400 words
+        - **Due:** Tuesday of Week 3
+        - **Grade Value:** 4.6% of course grade
+        
+        ### Must Include:
+        1. **Forms Connection:** How does the Cave illustrate appearance vs. reality?
+        2. **Personal Application:** What "shadows" do you mistake for reality?
+        3. **Contemporary Example:** Modern parallel to the allegory
+        4. **Critical Analysis:** One strength OR weakness of Plato's theory
+        
+        ### Grading Focus:
+        - Shows improvement from original draft
+        - Demonstrates understanding of philosophical concepts
+        - Clear thesis, evidence, and personal insight
+        """)
+    
+    # Simple text area for assignment submission
+    st.markdown("## Write Your Revised Reflection")
+    
+    reflection_text = st.text_area(
+        "Enter your revised reflection (300-400 words):",
+        height=300,
+        placeholder="Begin with a clear thesis about what Plato's Cave teaches us about reality and knowledge. Then connect it to the Theory of Forms, provide a modern example, and offer critical analysis..."
+    )
+    
+    if reflection_text:
+        word_count = len(reflection_text.split())
+        if word_count < 300:
+            st.warning(f"Word count: {word_count}/300 (minimum) - Need {300-word_count} more words")
+        elif word_count > 400:
+            st.warning(f"Word count: {word_count}/400 (maximum) - Remove {word_count-400} words")
+        else:
+            st.success(f"Word count: {word_count} - Perfect length!")
+            
+            if st.button("Submit Assignment"):
+                st.balloons()
+                st.success("Assignment submitted successfully!")
+
+# Topic quizzes from original program
+TOPIC_QUIZZES = {
+    "plato_basics": {
+        "title": "Plato's Theory of Forms",
+        "questions": [
+            {
+                "question": "According to Plato, the
