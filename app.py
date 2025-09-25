@@ -124,4 +124,51 @@ SLIDES = [
         
         ## Why Do People Reject Truth?
         - **Comfort of familiar illusions** - Truth can be painful and disruptive
-        - **Social pressure** - Others
+        - **Social pressure** - Others prefer their illusions
+        - **Difficulty of learning** - Philosophical education requires effort
+        - **Fear of change** - New knowledge transforms how we see everything
+        """,
+        "presenter_notes": "Connect to modern examples: social media echo chambers, confirmation bias, resistance to scientific facts."
+    },
+    {
+        "id": "human_nature_overview",
+        "title": "What Makes Us Human? Competing Theories",
+        "content": """
+        # 🧠 Theories of Human Nature
+        
+        ## Why Does Your View Matter?
+        
+        Your theory of human nature profoundly affects:
+        - **Relationships** - Do you trust others or assume self-interest?
+        - **Politics** - What kind of government do humans need?
+        - **Ethics** - Are we naturally good, evil, or neutral?
+        - **Education** - How should we develop human potential?
+        - **Personal identity** - What makes you "you"?
+        
+        ## Three Major Western Approaches
+        
+        ### 1. Rationalist View (Plato)
+        - **Core claim:** Humans are essentially rational souls
+        - **Key features:** Reason should rule over appetite and emotion
+        - **Immortality:** Soul survives bodily death
+        - **Purpose:** Achieve knowledge of eternal Forms
+        
+        ### 2. Materialist View (Hobbes, modern science)
+        - **Core claim:** Humans are complex physical machines
+        - **Key features:** All behavior explained by material causes
+        - **Mortality:** Death ends personal existence
+        - **Purpose:** Survival and satisfaction of desires
+        
+        ### 3. Judeo-Christian View (Augustine)
+        - **Core claim:** Humans made in God's image
+        - **Key features:** Rational soul created by God
+        - **Destiny:** Eternal existence with God
+        - **Purpose:** Love God and neighbor
+        
+        ## Critical Questions
+        - Are humans naturally selfish or capable of genuine altruism?
+        - Is there something non-physical about human consciousness?
+        - What distinguishes humans from other animals?
+        - Can human nature be fundamentally changed?
+        """,
+        "presenter_notes": "Encourage students to consider how their own beliefs about human nature affect their daily interactions."
