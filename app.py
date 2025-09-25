@@ -171,4 +171,77 @@ SLIDES = [
         - What distinguishes humans from other animals?
         - Can human nature be fundamentally changed?
         """,
-        "presenter_notes": "Encourage students to consider how their own beliefs about human nature affect their daily interactions."
+    },
+    {
+        "id": "plato_tripartite_soul",
+        "title": "Plato's Theory of the Soul",
+        "content": """
+        # ⚖️ Plato's Tripartite Soul
+        
+        ## Three Parts of Human Nature
+        
+        ### 1. Reason (Logos) - The Charioteer
+        - **Location:** Head/brain
+        - **Function:** Logical thinking, planning, understanding Forms
+        - **Virtue:** Wisdom (sophia)
+        - **Goal:** Knowledge of truth and goodness
+        
+        ### 2. Spirit/Emotion (Thumos) - The Noble Horse  
+        - **Location:** Chest/heart
+        - **Function:** Courage, anger, ambition, pride
+        - **Virtue:** Courage (andreia)
+        - **Goal:** Honor and recognition
+        
+        ### 3. Appetite (Epithumia) - The Wild Horse
+        - **Location:** Abdomen/below
+        - **Function:** Physical desires (food, sex, comfort)  
+        - **Virtue:** Temperance (sophrosyne)
+        - **Goal:** Immediate pleasure and satisfaction
+        
+        ## The Chariot Metaphor
+        
+        The charioteer (reason) must control and direct the horses while the noble horse (spirit) can be trained to support reason and the wild horse (appetite) constantly pulls toward base pleasures. Harmony is achieved when reason rules with spirit's help over appetite.
+        
+        ## Justice in the Soul
+        Individual justice occurs when reason rules through wisdom, spirit supports reason through courage, appetite obeys reason through temperance, and each part performs its proper function.
+        """,
+        "presenter_notes": "Ask students to identify times they've experienced conflicts between these different aspects of themselves."
+    },
+    {
+        "id": "modern_applications",
+        "title": "Ancient Philosophy in Modern Context",
+        "content": """
+        # 🌐 Ancient Wisdom, Modern Questions
+        
+        ## Digital Age Cave Allegories
+        
+        ### Social Media as Modern Caves
+        - **Echo chambers:** Algorithms show us only confirming information
+        - **Curated reality:** Instagram/TikTok present edited versions of life
+        - **Deepfakes:** Increasingly convincing false images and videos
+        - **Information bubbles:** We see only what platforms want us to see
+        
+        ## AI and Human Nature
+        
+        ### Machine Consciousness Questions
+        - **Turing test:** Can machines convince us they're conscious?
+        - **Human uniqueness:** What remains distinctly human if AI becomes intelligent?
+        - **Moral status:** Would conscious AI deserve rights?
+        - **Forms and AI:** Could machines access eternal truths better than humans?
+        
+        ## Neuroscience vs. Immaterial Soul
+        
+        ### The Hard Problem of Consciousness
+        - **Brain-mind connection:** Strong correlations between brain states and mental states
+        - **Subjective experience:** How does objective brain activity create subjective awareness?
+        - **Near-death experiences:** Evidence for soul-body separation or brain chemistry?
+        
+        ## Reflection Questions
+        - What would Plato think about virtual reality?
+        - Are smartphones like chains in the cave?
+        - How do we escape our modern caves and seek truth?
+        - What aspects of human nature remain constant across history?
+        """,
+        "presenter_notes": "Connect ancient philosophical questions to current headlines and technological developments students encounter daily."
+    }
+]
